@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="UTF-8" />
 	<title>CellAutomata</title>
 	<style>
 		body {
-			background-color: rgb(32,32,32);
-			color: rgb(192,192,192);
+			background-color: rgb(32, 32, 32);
+			color: rgb(192, 192, 192);
 			margin: 0;
 			padding: 0;
+			overflow: hidden;
 		}
-		#cnvScreen{
-			width: calc(100vw - 10px);
-			height: calc(100vh - 10px);
+
+		#cnvScreen {
+			border: none;
+			width: 100vw;
+			height: 100vh;
+			box-sizing: border-box;
 		}
 	</style>
 </head>
+
 <body>
 	<div id="divScreen">
 		<canvas id="cnvScreen" width="100%" height="" />
@@ -25,4 +31,5 @@
 		new CellAutomata("cnvScreen");
 	</script>
 </body>
+
 </html>
