@@ -60,8 +60,8 @@ CellAutomata.prototype = {
 		this.Tick();
 	},
 	Init: function () {
-		this.CellsWidth = 200;
-		this.CellsHeight = 100;
+		this.CellsWidth = 400;
+		this.CellsHeight = 200;
 		this.Cells = this.CreateGrid(this.CellsWidth, this.CellsHeight, function (x, y) { return false; });
 		this.CellsNext = this.CreateGrid(this.CellsWidth, this.CellsHeight, function (x, y) { return false; });
 
