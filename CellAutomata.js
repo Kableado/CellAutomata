@@ -64,21 +64,21 @@ CellAutomata.prototype = {
 		this.CellsHeight = 200;
 		this.Cells = this.CreateGrid(this.CellsWidth, this.CellsHeight, function (x, y) { return false; });
 		this.CellsNext = this.CreateGrid(this.CellsWidth, this.CellsHeight, function (x, y) { return false; });
-
+/*
 		this.Cells[49][99] = true;
 		this.Cells[49][100] = true;
 		this.Cells[50][100] = true;
 		this.Cells[50][101] = true;
 		this.Cells[51][100] = true;
-
-		/*
+*/
+		
 				// Slider
 				this.Cells[50][100] = true;
 				this.Cells[51][101] = true;
 				this.Cells[52][99] = true;
 				this.Cells[52][100] = true;
 				this.Cells[52][101] = true;
-		*/
+		
 	},
 	End: function () {
 		this.Running = false;
